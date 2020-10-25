@@ -2,13 +2,20 @@ var young = document.getElementById("young");
 var old = document.getElementById("old");
 
 function setYoung() {
-    localStorage.setItem('Age', "Under-13");
+    localStorage.setItem('Age', "younger");
     young.style.backgroundColor = "#F9C70C";
     old.style.backgroundColor = "#FFFFFF"
 }
 
 function setOld() {
-    localStorage.setItem('Age', "Over-13");
+    localStorage.setItem('Age', "older");
     old.style.backgroundColor = "#F9C70C";
     young.style.backgroundColor = "#FFFFFF"
+}
+
+function loadVideo(number){
+    var age = localStorage.getItem('Age');
+    let videoName = "videos/" + age + "-task" + number + ".mp4";
+    document.getElementById("videoSrc").src = videoName;
+    document.getElementById("video").load();
 }
