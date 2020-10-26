@@ -19,3 +19,10 @@ function loadVideo(number){
     document.getElementById("videoSrc").src = videoName;
     document.getElementById("video").load();
 }
+
+function storyChoice(correct, message){
+    document.getElementById('result').innerHTML = message;
+    if (correct == true){
+        document.getElementById('next').disabled = false;
+    }
+}

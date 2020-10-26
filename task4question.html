@@ -11,6 +11,14 @@
     </head>
     <body>
 
+        <p class = "story">Story</p> 
+
+        <div class = "userChoice">
+            <p>Question</p>
+            <button onclick="storyChoice(false, 'This is incorrect (explanation). Try again!')">Option 1</button>
+            <button onclick="storyChoice(true, 'Correct! (explanation). Click next to continue.')">Option 2</button>
+            <p id="result"></p> 
+        </div>
 
 
 
@@ -23,6 +31,6 @@
     <footer>
         <a href="task3interactive.html"><button>Back</button></a>
         <div class="space"></div>
-        <a href="task4video.html"><button>Next</button></a>
+        <a href="task4video.html"><button id = "next" disabled> Next</button></a>
     </footer>
 </html>
