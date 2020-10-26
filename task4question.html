@@ -10,13 +10,14 @@
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
     <body>
-
-        <p class = "story">Story</p> 
+        <br>
+        <p class = "story">School is finally over!</p> 
+        <p class = "story">You get ready to log off and grab a snack when you see this message: Update Available</p>
 
         <div class = "userChoice">
-            <p>Question</p>
-            <button onclick="storyChoice(false, 'This is incorrect (explanation). Try again!')">Option 1</button>
-            <button onclick="storyChoice(true, 'Correct! (explanation). Click next to continue.')">Option 2</button>
+            <p>Will you update it?</p>
+            <button onclick="storyChoice(false, 'Try again!')">Maybe later</button>
+            <button onclick="storyChoice(true, 'Correct! Updates are important to keep software safe. Click next to continue.')">Yes right now</button>
             <p id="result"></p> 
         </div>
 

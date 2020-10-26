@@ -10,12 +10,15 @@
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
     <body>
-        <p class = "story">You start your day with virtual school. What is this? It looks interesting. Let’s take a look at it!</p> 
+        <br>
+        <p class = "story">It's time for virtual school!</p>
+        <p class = "story">You open your laptop and start the day by looking at emails.</p>
+        <p class = "story">Oh look! This email looks interesting.</p>
 
         <div class = "userChoice">
             <p>Do you want to click on this email link?</p>
-            <button onclick="storyChoice(false, 'This is incorrect (explanation). Try again!')">Click the link</button>
-            <button onclick="storyChoice(true, 'Correct! (explanation). Click next to continue.')">Don't Click link</button>
+            <button onclick="storyChoice(false, 'Does this email look safe? Try again!')">Click the link</button>
+            <button onclick="storyChoice(true, 'Correct! Never click on suspicious links. Click next to continue.')">Don't Click link</button>
             <p id="result"></p> 
         </div>
 

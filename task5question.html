@@ -10,13 +10,14 @@
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
     <body>
-
-        <p class = "story">Story</p> 
-
+        <br>
+        <p class = "story">You just finished all of today's homework! Finally time to relax.</p> 
+        <p class = "story">Time to browse social media.</p>
+        <p class = "story">You're thinking about sharing a post with your location.</p>
         <div class = "userChoice">
-            <p>Question</p>
-            <button onclick="storyChoice(false, 'This is incorrect (explanation). Try again!')">Option 1</button>
-            <button onclick="storyChoice(true, 'Correct! (explanation). Click next to continue.')">Option 2</button>
+            <p>Should you share the post?</p>
+            <button onclick="storyChoice(false, 'Is this safe? Try again!')">Yes</button>
+            <button onclick="storyChoice(true, 'Correct! Don\'t share personal information online. Click next to continue.')">Nope</button>
             <p id="result"></p> 
         </div>
 
