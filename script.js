@@ -5,12 +5,14 @@ function setYoung() {
     localStorage.setItem('Age', "younger");
     young.style.backgroundColor = "#F9C70C";
     old.style.backgroundColor = "#FFFFFF"
+    document.getElementById('start').disabled = false;
 }
 
 function setOld() {
     localStorage.setItem('Age', "older");
     old.style.backgroundColor = "#F9C70C";
     young.style.backgroundColor = "#FFFFFF"
+    document.getElementById('start').disabled = false;
 }
 
 function loadVideo(number){
