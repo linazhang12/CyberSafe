@@ -28,3 +28,70 @@ function storyChoice(correct, message){
         document.getElementById('next').disabled = false;
     }
 }
+
+// For live password checker, received help from stackoverflow
+// https://stackoverflow.com/questions/948172/password-strength-meter
+function scorePassword(pass) {
+    var score = 0;
+    if (!pass)
+        return score;
+
+    // award every unique letter until 5 repetitions
+    var letters = new Object();
+    for (var i=0; i<pass.length; i++) {
+        letters[pass[i]] = (letters[pass[i]] || 0) + 1;
+        score += 5.0 / letters[pass[i]];
+    }
+
+    // bonus points for mixing it up
+    var variations = {
+        digits: /\d/.test(pass),
+        lower: /[a-z]/.test(pass),
+        upper: /[A-Z]/.test(pass),
+        nonWords: /\W/.test(pass),
+    }
+
+    var variationCount = 0;
+    for (var check in variations) {
+        variationCount += (variations[check] == true) ? 1 : 0;
+    }
+    score += (variationCount - 1) * 10;
+
+    return parseInt(score);
+}
+
+function checkPassStrength(pass) {
+    var score = scorePassword(pass);
+    if (score > 80)
+        return "Strong!";
+    if (score > 60)
+        return "Good";
+    if (score >= 30)
+        return "Weak";
+    if (score < 30)
+        return "Not good"
+
+    return "";
+}
+
+$(document).ready(function() {
+    $("#password").on("keypress keyup keydown", function() {
+        var pass = $(this).val();
+        $("#strength_human").text(checkPassStrength(pass));
+
+        if ($("#strength_human").text().indexOf("Strong")>-1) //if it is "Strong"
+            $("#strength_human").css({"color":"Green"});
+        else if
+            ($("#strength_human").text().indexOf("Good")>-1) //if it is "Good"
+            $("#strength_human").css({"color":"Blue"});
+        else if
+            ($("#strength_human").text().indexOf("Weak")>-1) //if it is "Weak"
+            $("#strength_human").css({"color":"Orange"});
+        else if
+            ($("#strength_human").text().indexOf("Not")>-1) //if it is "Not good"
+            $("#strength_human").css({"color":"Red"});
+        else
+            $("#strength_human").css({"color":"black"});
+    });
+});
+// end of help from stackoverflow --------------------------
