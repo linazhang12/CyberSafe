@@ -10,6 +10,31 @@
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
     <body>
+        <br>
+        <p class = "story">Let's try out some sample passwords and test how strong they are. Remember, stronger passwords make it harder for someone to login to your account that should not be able to.</p>
+
+        <p class = "story">To create a stronger password, consider incorporating the some or all of following:</p>
+
+        <div style="display:flex; justify-content: center;">
+            <ul>
+                <li>Uppercase and lowercase letter (A, z)</li>
+                <li>Numbers (0-9)</li>
+                <li>Special characters (!, @, %, #, etc.)</li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div class = "userChoice">
+            <p>Enter a password:</p>
+            <p>(see if you can get a Good or Strong password)</p>
+            <input type="text" id="password"/>
+            <br><br>
+            <p>Strength:</p>
+            <div class="figure passScore" id="strength_human"> </div>   
+
+        </div>
+            
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
