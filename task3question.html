@@ -9,13 +9,13 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
-    <body>
+    <body onload="loadStory(3)">
         <br>
         <p class = "story">It was good that you created a strong password for that account.</p> 
-        <p class = "story">You want to keep your school work safe. </p>
-        <img src="images/task3.gif" alt="2fa" width="450px" style="display:block; margin:auto;">
+        <p id = "taskStory" class = "story">You want to keep your school work safe. </p>
+        <img id = "image" src="images/task3.gif" alt="2fa" width="450px" style="display:block; margin:auto;">
         <div class = "userChoice">
-            <p>What else can you do to keep your account secure?</p>
+            <p>What else can you do to keep yourself secure?</p>
             <button onclick="storyChoice(false, 'Try again!')">Nothing</button>
             <button onclick="storyChoice(true, 'That\'s right. Let\'s learn more about these options. Click next to continue.')">Extra Authentication</button>
             <p id="result"></p> 
