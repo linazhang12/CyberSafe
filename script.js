@@ -29,6 +29,30 @@ function storyChoice(correct, message){
     }
 }
 
+function setVisibility() {
+    var age = localStorage.getItem('Age');
+    if(age == 'older'){
+        older.style.display = 'block';
+        younger.style.display = 'none';
+    }
+    else{
+        younger.style.display = 'block';
+        older.style.display = 'none';
+    }
+}
+
+function checkForUpdates(correct) {
+    var txt;
+    if (confirm("You currently have 1 update available!\nThis update:\n• Does not reset any security settings\n• Contains minor bug fixes\n\n Press OK to Update or Cancel to cancel.")) {
+        txt = "You completed the update! Since you read about what the update did and it was a minor update with bug fixes, it was okay to update now.";
+    } else {
+        txt = "Good job for being cautious! However, since you read that it was a minor update with bug fixes, it would be okay to update now.";
+    }
+    document.getElementById("updateAnswer").innerHTML = txt;
+    document.getElementById("afterAnswer").style.display = "block";
+    
+}
+
 // For live password checker, received help from stackoverflow
 // https://stackoverflow.com/questions/948172/password-strength-meter
 function scorePassword(pass) {
