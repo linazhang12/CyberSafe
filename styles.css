@@ -20,7 +20,7 @@ footer {
     padding-bottom: 2%;
     text-align: center;
     position: fixed;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
 }
 

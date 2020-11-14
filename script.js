@@ -22,13 +22,6 @@ function loadVideo(number){
     document.getElementById("video").load();
 }
 
-function loadStory(number){
-    var age = localStorage.getItem('Age');
-    let gifName = "images/" + age + "-task" + number + ".gif";
-    document.getElementById("image").src=gifName;
-    document.getElementById('taskStory').innerHTML = "Next you want to make sure you stay safe online.";
-}
-
 function storyChoice(correct, message){
     document.getElementById('result').innerHTML = message;
     if (correct == true){
