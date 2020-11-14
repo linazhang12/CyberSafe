@@ -9,8 +9,40 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
-    <body>
+    <body onload="setVisibility();">
+        <div id="older">
+            <br>
+            <p class = "story">Let's set up Two-Factor Authentication for Zoom so we can keep our account secure that you use for online school.</p>
+            <p class = "story"><a href="https://blog.zoom.us/secure-your-zoom-account-with-two-factor-authentication/" target="_blank">Click here to follow the instructions to learn how to set this up on Zoom.</a></p>
+            <p class = "story">Once you have completed setting up Two-Factor Authentication for you Zoom account, click the button below to move on to the next lesson.</p>
+            <div class = "userChoice">
+                <div style="text-align: left; width: 100%" class="userChoice">
+                    <button style="margin: auto; display: block" onclick="storyChoice(true, 'Great work!')">I have successfully completed setting up Two-Factor Authentication on Zoom!</button>
+                </div>
+            </div>
+        </div>
 
+        <div id="younger">
+            <br>
+            <p class = "story">There are many different types of programs and tools depending on your device to set up parental controls to help keep us safe.</p>
+            <p class = "story">Team up with your Cyber Buddy and look through which method is appropriate for you and the devices you have. Below are some suggestions to help get you started.</p>
+            <div style="display:flex; justify-content: center;">
+                <ul>
+                    <li><a href="https://support.apple.com/en-us/HT201304" target="_blank">Parental Controls for Apple iOS (iPhone, iPad, iPod Touch)</a></li>
+                    <li><a href="https://www.macrumors.com/how-to/manage-restrictions-macos-parental-controls/" target="_blank">Parental Controls for Apple macOS</a></li>
+                    <li><a href="https://www.howtogeek.com/666985/how-to-use-parental-controls-in-windows-10/" target="_blank">Parental Controls for Windows 10</a></li>
+                </ul>
+            </div>
+            <p class = "story">Once you have found a good system, set up parental controls on your device with your Cyber Buddy and make sure you both know how to use it.</p>
+            <p class = "story">When you're all done setting up parental controls, click the button below to move on to the next lesson.</p>
+            <div class = "userChoice">
+                <div style="text-align: left; width: 100%" class="userChoice">
+                    <button style="margin: auto; display: block" onclick="storyChoice(true, 'Great work!')">My Cyber Buddy and I have successfully completed setting up parental controls.</button>
+                </div>
+            </div>
+        </div>
+
+        <p id="result" class="userChoice"></p> 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -20,6 +52,6 @@
     <footer>
         <a href="task3video.html"><button>Back</button></a>
         <div class="space"></div>
-        <a href="task4question.html"><button>Next</button></a>
+        <a href="task4question.html"><button id = "next" disabled>Next</button></a>
     </footer>
 </html>
