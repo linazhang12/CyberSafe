@@ -9,14 +9,21 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
-    <body>
+    <body onload="setVisibility();">
         <br>
         <p class = "story">You just finished all of today's homework! Finally time to relax.</p> 
-        <p class = "story">Time to browse social media.</p>
-        <p class = "story">You're thinking about sharing a post with your location.</p>
+
+        <div id="older">
+            <p class = "story">Time to browse social media.</p>
+            <p class = "story">You're thinking about sharing a post with your location.</p>
+        </div>
+        <div id="younger">
+            <p class = "story">Time to play video games!</p>
+            <p class = "story">You're thinking about sharing where you're from with friends online.</p>
+        </div>
         <img src="images/task5.gif" alt="location" width="450px" style="display:block; margin:auto;">
         <div class = "userChoice">
-            <p>Should you share the post?</p>
+            <p>Should you share your location?</p>
             <button onclick="storyChoice(false, 'Is this safe? Try again!')">Yes</button>
             <button onclick="storyChoice(true, 'Correct! Don\'t share personal information online. Click next to continue.')">Nope</button>
             <p id="result"></p> 
