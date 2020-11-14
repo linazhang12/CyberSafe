@@ -9,9 +9,33 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
-    <body>
-
-
+    <body onload="setVisibility();">
+        <br>
+        <p class = "story">Let's practice checking to see if we have any updates we can make. Click the button below to check for updates.</p>
+        <button style="margin: auto; display: block" onclick="checkForUpdates()">Check for Updates</button>
+        <br>
+        <p class= "story" id="updateAnswer"></p>
+        <br>
+        <div id="afterAnswer" style="display: none">
+            <p class="story">Now that you've had practice checking for updates and deciding if you should continue or not, let's actually update anything that may be out of date.</p>
+            <p class="story">If you need help getting started, try these resources below:</p>
+            <div style="display:flex; justify-content: center;">
+                <ul>
+                    <li><a href="https://support.apple.com/en-us/HT201541#:~:text=Choose%20System%20Preferences%20from%20the,select%20specific%20updates%20to%20install." target="_blank">Updating software on Mac</a></li>
+                    <li><a href="https://support.microsoft.com/en-us/windows/update-windows-10-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a" target="_blank">Updating software on Windows 10</a></li>
+                    <li><a href="https://support.apple.com/en-us/HT202180" target="_blank">Updating Apple apps (iPhone, iPad, iPod Touch)</a></li>
+                    <li><a href="https://support.google.com/googleplay/answer/113412?hl=en" target="_blank">Updating Andriod apps</a></li>
+                </ul>
+            </div>
+            <p class = "story">Once you have found an available update and looked into details on what is included in the update, complete the update and check to make sure your security settings did not get reset.</p>
+            <p class = "story">When you're all done with the update process, click the button below to move on to the next lesson.</p>
+            <div class = "userChoice">
+                <div style="text-align: left; width: 100%" class="userChoice">
+                    <button style="margin: auto; display: block" onclick="storyChoice(true, 'Great work!')">My Cyber Buddy and I have successfully completed setting up parental controls.</button>
+                </div>
+            </div>
+            <p id="result" class="userChoice"></p> 
+        </div>
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -22,6 +46,6 @@
     <footer>
         <a href="task4video.html"><button>Back</button></a>
         <div class="space"></div>
-        <a href="task5question.html"><button>Next</button></a>
+        <a href="task5question.html"><button id = "next" disabled>Next</button></a>
     </footer>
 </html>
