@@ -41,6 +41,13 @@ footer button {
     text-align: center;
 }
 
+.buddy{
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+}
+
 .userChoice{
     width: 70%;
     padding: 10px;
