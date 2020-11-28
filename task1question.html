@@ -10,23 +10,24 @@
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
     <body>
-        <br>
-        <p class = "story">It's time for virtual school! You open your laptop and start the day by looking at emails.</p>
-        <p class = "story">Oh look! This email looks interesting.</p>
-        <img src="images/task1.gif" alt="suspicious email" width="450px" style="display:block; margin:auto;">
-        <div class = "userChoice">
-            <p>Do you want to click on this email link?</p>
-            <button onclick="storyChoice(false, 'Does this email look safe? Try again!')">Click the link</button>
-            <button onclick="storyChoice(true, 'Correct! Never click on suspicious links. Click next to continue.')">Don't Click link</button>
-            <p id="result"></p> 
+        <div class="background">
+            <br>
         </div>
-
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>
     <footer>
+        <p class = "story">It's time for virtual school! You open your laptop and start the day by looking at emails.</p>
+        <p class = "story">Oh look! This email looks interesting.</p>
+        <!-- <img src="images/task1.gif" alt="suspicious email" width="450px" style="display:block; margin:auto;"> -->
+        <div class = "userChoice">
+            <p>Do you want to click on this email link?</p>
+            <button onclick="storyChoice(false, 'Does this email look safe? Try again!')">Click the link</button>
+            <button onclick="storyChoice(true, 'Correct! Never click on suspicious links. Click next to continue.')">Don't Click link</button>
+            <p id="result"></p> 
+        </div>
         <a href="index.html"><button>Back</button></a>
         <div class="space"></div>
         <a href="task1video.html"><button id = "next" disabled>Next</button></a>
