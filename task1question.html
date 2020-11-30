@@ -19,10 +19,12 @@
         <script src="script.js"></script>
     </body>
     <footer>
-        <p class = "story">It's time for virtual school! You open your laptop and start the day by looking at emails.</p>
-        <p class = "story">Oh look! This email looks interesting.</p>
-        <!-- <img src="images/task1.gif" alt="suspicious email" width="450px" style="display:block; margin:auto;"> -->
-        <div class = "userChoice">
+        <div id = "storyBlock">
+            <div id = "storyText"> Story: Part 1 </div>
+            <button onclick="storyLoad(story1)">Continue</button>
+            <br>
+        </div>
+        <div id = "userChoice" style="display: none;">
             <p>Do you want to click on this email link?</p>
             <button onclick="storyChoice(false, 'Does this email look safe? Try again!')">Click the link</button>
             <button onclick="storyChoice(true, 'Correct! Never click on suspicious links. Click next to continue.')">Don't Click link</button>
