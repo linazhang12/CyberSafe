@@ -23,7 +23,7 @@ video {
   }
 
 footer {
-    padding: 4% 0% 1% 0%;
+    padding: 1% 0% 1% 0%;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -67,4 +67,13 @@ footer button {
     background-position: center;
     height: 500px; width: 100%;
     background-repeat: no-repeat;
+}
+
+.interactivePicture{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 12px;
 }
