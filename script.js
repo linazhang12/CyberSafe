@@ -5,25 +5,20 @@ var story1 =    ["Hey, are you ready for school? I can’t wait!",
                 "I’m just going to open zoom and find the class link… what was the link again?", 
                 "I guess I’ll have to open the emails and search for it.", 
                 "Oh look I got an email for a free phone!", 
-                "Wow that sounds like a great deal! Let me read through this email before class.", 
-                "This looks so good! Should I click the link to claim the phone?"];
+                "Wow that sounds like a great deal! Let me read through this email before class."];
 var story2 =    ["Class is finally over!", 
                 "Let me check what she assigned for homework.", 
                 "Looks like I have to make an account to read the textbook.",
-                "Alright I’m going to create the account now! I've entered my email and username",
-                "What should I pick for the password?"];
+                "Alright I’m going to create the account now! I've entered my email and username"];
 var story3 =    ["Good thing I made a strong password to keep my work safe.", 
-                "Maybe I should find out if there’s anything else I can do to protect myself online", 
-                "What are some things I should look into?"];
+                "Maybe I should find out if there’s anything else I can do to protect myself online"];
 var story4 =    ["Wow what a long day. School is finally over!",
                 "Time to log out of zoom and grab a snack.",
                 "Oh wait what’s this?", 
-                "It says that an update is available for my computer.", 
-                "Should I just avoid this update?"];
+                "It says that an update is available for my computer."];
 var story5 =    ["Finally done with homework!", 
                 "I think I’m going to play some video games online.", 
-                "I like chatting with the teammates from games.", 
-                "Should I share the general area I’m playing from?"];
+                "I like chatting with the teammates from games."];
 var storyCounter = 0;
 
 function setYoung() {
