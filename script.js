@@ -1,6 +1,29 @@
 var young = document.getElementById("young");
 var old = document.getElementById("old");
 
+var story1 =    ["Hey, are you ready for school? I can’t wait!", 
+                "I’m just going to open zoom and find the class link… what was the link again?", 
+                "I guess I’ll have to open the emails and search for it.", 
+                "Oh look I got an email for a free phone!", 
+                "Wow that sounds like a great deal! Let me read through this email before class."];
+var story2 =    ["Class is finally over!", 
+                "Let me check what she assigned for homework.", 
+                "Looks like I have to make an account to read the textbook.",
+                "Alright I’m going to create the account now! I've entered my email and username"];
+var story3 =    ["Good thing I made a strong password to keep my work safe.", 
+                "Maybe I should find out if there’s anything else I can do to protect myself online"];
+var story4 =    ["Wow what a long day. School is finally over!",
+                "Time to log out of zoom and grab a snack.",
+                "Oh wait what’s this?", 
+                "It says that an update is available for my computer."];
+var story5 =    ["Finally done with homework!", 
+                "I think I’m going to play some video games online.", 
+                "I like chatting with the teammates from games."];
+var story5older =  ["Finally done with homework!", 
+                "I think I’m going to check my social media.", 
+                "I want to share this post, and I might add the location."];
+var storyCounter = 0;
+
 function setYoung() {
     localStorage.setItem('Age', "younger");
     young.style.backgroundColor = "#F9C70C";
@@ -20,6 +43,18 @@ function loadVideo(number){
     let videoName = "videos/" + age + "-task" + number + ".mp4";
     document.getElementById("videoSrc").src = videoName;
     document.getElementById("video").load();
+}
+
+function storyLoad(number){
+    var storyNum = number;
+    if ( storyCounter == storyNum.length ){
+        storyCounter = 0;
+        storyBlock.style.display = 'none';
+        userChoice.style.display = 'block';
+    }
+    console.log(storyNum[storyCounter]);
+    document.getElementById("storyText").innerHTML = storyNum[storyCounter];
+    storyCounter++;
 }
 
 function storyChoice(correct, message){

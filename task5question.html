@@ -10,33 +10,27 @@
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
     <body onload="setVisibility();">
-        <br>
-        <p class = "story">You just finished all of today's homework! Finally time to relax.</p> 
-
-        <div id="older">
-            <p class = "story">Time to browse social media.</p>
-            <p class = "story">You're thinking about sharing a post with your location.</p>
+        <div class="background">
+            <br>
         </div>
-        <div id="younger">
-            <p class = "story">Time to play video games!</p>
-            <p class = "story">You're thinking about sharing where you're from with friends online.</p>
-        </div>
-        <img src="images/task5.gif" alt="location" width="450px" style="display:block; margin:auto;">
-        <div class = "userChoice">
-            <p>Should you share your location?</p>
-            <button onclick="storyChoice(false, 'Is this safe? Try again!')">Yes</button>
-            <button onclick="storyChoice(true, 'Correct! Don\'t share personal information online. Click next to continue.')">Nope</button>
-            <p id="result"></p> 
-        </div>
-
-
-
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>
-    <footer>
+    <footer onload="setVisibility();">
+        <div id = "storyBlock">
+            <div id = "storyText"> Story: Part 5 </div>
+            <div id="younger"><button onclick="storyLoad(story5)">Continue</button></div>
+            <div id="older"><button onclick="storyLoad(story5older)">Continue</button></div>
+            <br>
+        </div>
+        <div id = "userChoice" style="display: none;">
+            <p>Should I share the location I'm at?</p>
+            <button onclick="storyChoice(false, 'Is this safe? Try again!')">Yes</button>
+            <button onclick="storyChoice(true, 'Correct! Don\'t share personal information online. Click next to continue.')">Nope</button>
+            <p id="result"></p> 
+        </div>
         <a href="task4interactive.html"><button>Back</button></a>
         <div class="space"></div>
         <a href="task5video.html"><button id = "next" disabled>Next</button></a>

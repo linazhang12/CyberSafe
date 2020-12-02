@@ -10,23 +10,27 @@
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
     <body>
-        <br>
-        <p class = "story">You need to make a new account for school work.</p> 
-        <p class = "story">The website asks you to create a new password</p>
-        <img src="images/task2.gif" alt="password" width="450px" style="display:block; margin:auto;">
-        <div class = "userChoice">
-            <p>Hmm... which password should you choose?</p>
-            <button onclick="storyChoice(false, 'Is this a strong password? Try again!')">12345</button>
-            <button onclick="storyChoice(true, 'Correct! This is complex enough to keep an account safe. Click next to continue.')">skO9e90Bskj!jkn@</button>
-            <p id="result"></p> 
+        <div class="background" style = "background-image: url(images/task2.png);">
+            <br>
         </div>
-
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>
     <footer>
+        <div id = "storyBlock">
+            <div id = "storyText"> Story: Part 2 </div>
+            <button onclick="storyLoad(story2)">Continue</button>
+            <br>
+        </div>
+        <div id = "userChoice" style="display: none;">
+            <p>Hmm... which password should you choose?</p>
+            <button onclick="storyChoice(false, 'Is this a strong password? Try again!')">12345</button>
+            <button onclick="storyChoice(true, 'Correct! This is complex enough to keep an account safe. Click next to continue.')">skO9e90Bskj!jkn@</button>
+            <p id="result"></p> 
+        </div>
+
         <a href="task1interactive.html"><button>Back</button></a>
         <div class="space"></div>
         <a href="task2video.html"><button id = "next" disabled>Next</button></a>

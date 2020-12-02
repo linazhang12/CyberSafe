@@ -10,32 +10,39 @@
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
     <body onload="setVisibility();">
-    <br>
-    <div id="older">
-        <p class = "story">Which post would NOT be a good idea to publish on social media?</p>
-        <div class = "userChoice">
-            <div style="text-align: left; width: 100%" class="userChoice">
-                <input type="radio" name="question" onclick="storyChoice(false, 'Nothing in this post would be dangerous to share. Try again!')"> "Two of my favorite things -- my cat and chocolate chip cookies!"</input> <br> <br>
-                <input type="radio" name="question" onclick="storyChoice(true, 'Correct! This post gives away personal information that is not a good idea to share online.')"> "I need help picking an outfit for this weekend. Text me if you have any suggestions: 512-123-4567."</input> <br> <br>
-                <input type="radio" name="question" onclick="storyChoice(false, 'This message seems good to post. It does not give away any personal information that should not be online. Try again!')"> "Happy Thanksgiving everyone! I'm thankful for y'all."</input> <br> <br>
-                <input type="radio" name="question" onclick="storyChoice(false, 'This post seems okay. Just remember to check the pictures you post for anything that could give away too much personal information. Try again.')"> "I had a great time in Colorado last year! Here are some pics of us hiking."</input> <br> <br>
+        <br>
+
+        <div id="older">
+            <img src = "images/task5_older_interactive.png" class="interactivePicture">
+            <div class="footer">
+                <p class = "story">Which caption would NOT be a good idea to post on social media?</p>
+                <div class = "userChoice">
+                    <div style="text-align: left; width: 100%" class="userChoice">
+                        <input type="radio" name="question" onclick="storyChoice(false, 'Nothing in this post would be dangerous to share. Try again!')"> "Two of my favorite things -- my cat and a lemon hat!"</input> <br>
+                        <input type="radio" name="question" onclick="storyChoice(true, 'Correct! This post gives away personal information that is not a good idea to share online.')"> "I need help picking another outfit for Felix. Text me if you have any suggestions: 512-123-4567."</input> <br>
+                        <input type="radio" name="question" onclick="storyChoice(false, 'This message seems good to post. It does not give away any personal information that should not be online. Try again!')"> "Happy National Cat day everyone!"</input> <br>
+                        <input type="radio" name="question" onclick="storyChoice(false, 'This post seems okay. Just remember to check the pictures you post for anything that could give away too much personal information. Try again.')"> "Felix and I had a great time together at the park yesterday."</input> <br>
+                    </div>
+                </div>
+                <p id="result" class="userChoice"></p>
             </div>
         </div>
-    </div>
 
-    <div id="younger">
-        <p class = "story">We are creating a new username for our video game. Everyone online will be able to see it. Which username would NOT be a good one to use?</p>
-        <div class = "userChoice">
-            <div style="text-align: left; width: 100%" class="userChoice">
-                <input type="radio" name="question" onclick="storyChoice(false, 'This username looks fine! Try another one.')"> "CoolKat1111"</input> <br> <br>
-                <input type="radio" name="question" onclick="storyChoice(false, 'This username is great! Try again.')"> "xMinecraftLoverx"</input> <br> <br>
-                <input type="radio" name="question" onclick="storyChoice(false, 'This username looks good! It does not give anything away about us in real life. Try again!')"> "DarkNinja40"</input> <br> <br>
-                <input type="radio" name="question" onclick="storyChoice(true, 'Correct! This username looks like it gives away our name, the place we live, and the year we were born. We should avoid using this name.')"> "SammyTexasKid2014"</input> <br> <br>
+        <div id="younger">
+            <img src = "images/task5_younger_interactive.png" class="interactivePicture">
+            <div class="footer">
+                <p class = "story">We are creating a new username for our video game. Everyone online will be able to see it. Which username would NOT be a good one to use?</p>
+                <div class = "userChoice">
+                    <div style="text-align: left; width: 100%" class="userChoice">
+                        <input type="radio" name="question" onclick="storyChoice(false, 'This username looks fine! Try another one.')"> "CoolKat1111"</input> <br>
+                        <input type="radio" name="question" onclick="storyChoice(false, 'This username is great! Try again.')"> "xMinecraftLoverx"</input> <br>
+                        <input type="radio" name="question" onclick="storyChoice(false, 'This username looks good! It does not give anything away about us in real life. Try again!')"> "DarkNinja40"</input> <br>
+                        <input type="radio" name="question" onclick="storyChoice(true, 'Correct! This username looks like it gives away our name, the place we live, and the year we were born. We should avoid using this name.')"> "SammyTexasKid2014"</input> <br>
+                    </div>
+                </div>
+                <p id="result" class="userChoice"></p>
             </div>
         </div>
-    </div>
-
-    <p id="result" class="userChoice"></p>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

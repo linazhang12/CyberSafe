@@ -12,19 +12,7 @@
     <body>
         <br>
 
-        <p class = "story">Which message should we NOT click because it looks too good to be true?</p>
-
-        <div class = "userChoice">
-            <div style="text-align: left; width: 100%" class="userChoice">
-                <input type="radio" name="question" onclick="storyChoice(false, 'This message seems to look good. It is not asking us to do anything that would give away our information. Try again!')"> "Zoom Meeting Reminder - You have a Zoom meeting scheduled in 30 minutes."</input> <br> <br>
-                <input type="radio" name="question" onclick="storyChoice(false, 'It looks like this is an informative message from our teacher. Nothing suspicious here!')"> "Thank You, Class - I just wanted to say thank you for being very attentive in class yesterday! See you all soon."</input> <br> <br>
-                <input type="radio" name="question" onclick="storyChoice(true, 'Correct! We should never click anything that requires us to give away valuable information from a source we cannot trust. Click next to continue.')"> "AMAZING DEAL! Fill out this short survey to win a free trip to Hawaii."</input> <br> <br>
-                <input type="radio" name="question" onclick="storyChoice(false, 'This looks like a simple notification. Try again!')"> "Your Homework 2 assignment was graded."</input> <br> <br>
-            </div>
-            <p id="result"></p> 
-        </div>
-
-
+        <img src = "images/task1_interactive.png" class="interactivePicture">
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -32,6 +20,18 @@
         <script src="script.js"></script>
     </body>
     <footer>
+        <p class = "story">Which email should we NOT click because it looks too good to be true?</p>
+
+        <div class = "userChoice">
+            <div style="text-align: left; width: 100%" class="userChoice">
+                <input type="radio" name="question" onclick="storyChoice(false, 'This message seems to look good. It is not asking us to do anything that would give away our information. Try again!')"> Zoom</input> <br>
+                <input type="radio" name="question" onclick="storyChoice(false, 'It looks like this is an informative message from our teacher. Nothing suspicious here!')"> Mrs. Clark</input> <br>
+                <input type="radio" name="question" onclick="storyChoice(true, 'Correct! We should never click anything that requires us to give away valuable information from a source we cannot trust. Click next to continue.')"> unknown sender</input> <br>
+                <input type="radio" name="question" onclick="storyChoice(false, 'This looks like a simple notification. Try again!')"> School</input> <br>
+            </div>
+            <p id="result"></p> 
+        </div>
+
         <a href="task1video.html"><button>Back</button></a>
         <div class="space"></div>
         <a href="task2question.html"><button id = "next" disabled>Next</button></a>

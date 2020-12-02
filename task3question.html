@@ -10,30 +10,26 @@
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
     </head>
     <body onload="setVisibility();">
-        <br>
-        <p class = "story">It was good that you created a strong password for that account.</p> 
-        <p id = "taskStory" class = "story">You want to keep your school work safe. </p>
-        <div id="older">
-            <img id = "image" src="images/task3.gif" alt="parental controls" width="40px" style="display:block; margin:auto;">
+        <div class="background">
+            <br>
         </div>
-        <div id="younger">
-            <img id = "image" src="images/younger-task3.gif" alt="2fa" width="400px" style="display:block; margin:auto;">
-        </div>
-        <div class = "userChoice">
-            <p>What else can you do to keep yourself secure?</p>
-            <button onclick="storyChoice(false, 'Try again!')">Nothing</button>
-            <button onclick="storyChoice(true, 'That\'s right. Let\'s learn more about these options. Click next to continue.')">Extra Authentication</button>
-            <p id="result"></p> 
-        </div>
-
-
-
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>
     <footer>
+        <div id = "storyBlock">
+            <div id = "storyText"> Story: Part 3 </div>
+            <button onclick="storyLoad(story3)">Continue</button>
+            <br>
+        </div>
+        <div id = "userChoice" style="display: none;">
+            <p>What else can you do to keep yourself secure?</p>
+            <button onclick="storyChoice(false, 'Try again!')">Nothing</button>
+            <button onclick="storyChoice(true, 'That\'s right. Let\'s learn more about these options. Click next to continue.')">Extra Authentication</button>
+            <p id="result"></p> 
+        </div>
         <a href="task2interactive.html"><button>Back</button></a>
         <div class="space"></div>
         <a href="task3video.html"><button id = "next" disabled>Next</button></a>
