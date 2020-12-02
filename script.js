@@ -19,6 +19,9 @@ var story4 =    ["Wow what a long day. School is finally over!",
 var story5 =    ["Finally done with homework!", 
                 "I think I’m going to play some video games online.", 
                 "I like chatting with the teammates from games."];
+var story5older =  ["Finally done with homework!", 
+                "I think I’m going to check my social media.", 
+                "I want to share this post, and I might add the location."];
 var storyCounter = 0;
 
 function setYoung() {

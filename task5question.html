@@ -18,14 +18,15 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>
-    <footer>
+    <footer onload="setVisibility();">
         <div id = "storyBlock">
             <div id = "storyText"> Story: Part 5 </div>
-            <button onclick="storyLoad(story5)">Continue</button>
+            <div id="younger"><button onclick="storyLoad(story5)">Continue</button></div>
+            <div id="older"><button onclick="storyLoad(story5older)">Continue</button></div>
             <br>
         </div>
         <div id = "userChoice" style="display: none;">
-            <p>Should I share the general area I’m playing from?</p>
+            <p>Should I share the location I'm at?</p>
             <button onclick="storyChoice(false, 'Is this safe? Try again!')">Yes</button>
             <button onclick="storyChoice(true, 'Correct! Don\'t share personal information online. Click next to continue.')">Nope</button>
             <p id="result"></p> 
